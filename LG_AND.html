@@ -11,7 +11,7 @@
 <body>
 	<center> <h1><du> <a href='index.html'> icword </a> </du></h1> </center>
 		
-	<table>
+	<table style="text-align: left; vertical-align: top">
     <colgroup>
        <col style="width: 250px">
        <col style="width: 1000px">
@@ -38,13 +38,61 @@
 	<tr>
 		<td><b>Logic Symbol </b> </td>
 		<td>
-			\(\cdot\) (dot) <br> e.g. Y = A \(\cdot\) B
+			\(\cdot\) (dot) <br> e.g. \(Y = A \cdot B\)
 		</td>
 	</tr>
 	<tr>
-		<td><b>Logic Diagram </b> </td>
-		<td>
-			<img src='img/LG_AND_dia.png' alt='Logic diagram for AND gate'>
+		<td><b>Logic Diagram </b> <br> (For 2 inputs)</td>
+		<td> 
+			<img src='img/LG_AND_2ip.png' alt='Logic diagram for AND gate'>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Truth table </b> <br> (For 2 inputs)</td>
+		<td> 
+			<table style="text-align: center">
+				<colgroup>
+					<col style="width: 100px">
+					<col style="width: 100px">
+					<col style="width: 100px">
+				</colgroup>
+				<tr>
+					<th>\(A\)</th>
+					<th>\(B\)</th>
+					<th>\(Y = A \cdot B\)</th>
+				</tr>
+				<tr>	<td>0</td><td>0</td><td>0</td>	</tr>
+				<tr>	<td>0</td><td>1</td><td>0</td>	</tr>
+				<tr>	<td>1</td><td>0</td><td>0</td>	</tr>
+				<tr>	<td>1</td><td>1</td><td>1</td>	</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Integrated Circuits </b></td>
+		<td> 
+			<table style="text-align: center">
+				<colgroup>
+					<col style="width: 200px">
+					<col style="width: 200px">
+				</colgroup>
+				<tr>
+					<th>Number of Inputs</th>
+					<th>IC Number</th>
+				</tr>
+				<tr>
+					<td>Two Inputs</td>
+					<td>7408, 7409, 4081</td>
+				</tr>
+				<tr>
+					<td>Three Inputs</td>
+					<td>7411, 7415, 4073</td>
+				</tr>
+				<tr>
+					<td>Four Inputs</td>
+					<td>7421, 4082 </td>
+				</tr>
+			</table>
 		</td>
 	</tr>
 	
