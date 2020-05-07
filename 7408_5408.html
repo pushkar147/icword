@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>IC 7408 / IC 5408| icword</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src='include.js'></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<center> <h1><du> <a href='index.html'> icword </a> </du></h1> </center>
+		
+	<table style="text-align: left; vertical-align: top">
+		<tr>
+			<td>  <div include-html="sidepan.html"></div>  </td>
+			<td>
+<!--- webpage content goes here --->		
+
+<h1><center> 7408 / 5408 </center></h1>
+<table>
+	<tr>
+		<td><b>Function </b> </td>
+		<td> <a href="LG_AND.html">AND Gate</a> </td>
+	</tr>
+	<tr>
+		<td><b>Number of gates in IC </b> </td>
+		<td>4</td>
+	</tr>
+	<tr>
+		<td><b>Number of inputs/outputs </b> </td>
+		<td>2 inputs for each gate (total 8)<br>1 output for each gate (total 4)</td>
+	</tr>
+	<tr>
+		<td><b>Pinouts and Logic Diagram </b> </td>
+		<td> 
+			<img src="img/7408_pinouts.png" alt="Pinouts and Logic diagram of 7408">
+		</td>
+	</tr>
+		<td><b>Pin Description </b> </td>
+		<td> 
+			<table>
+				<tr> <th>Pin</th> <th>Function</th> <th>Typical Voltage</th> </tr>
+				<tr> <td>Vcc</td> <td>Power supply (+ve)</td> <td>+5 volt</td> </tr>
+				<tr> <td>GND</td> <td>Reference ground</td> <td>0 volt</td> </tr>
+				<tr>
+					<td>A<sub>i</sub>, B<sub>i</sub> <br> (i=1,2,3,4)</td> 
+					<td>Inputs for i<sup>th</sup> AND gate</td>
+					<td>0 volt for logic <b>0</b> <br> +5 volt for logic <b>1</b></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Truth table </b> </td>
+		<td> 
+			<table style="text-align: center">
+				<colgroup>
+					<col style="width: 100px">
+					<col style="width: 100px">
+					<col style="width: 100px">
+				</colgroup>
+				<tr>
+					<th colspan=2>Inputs</th>	<th>Output</th>
+				</tr>
+				<tr>
+					<th>\(A_i\)</th>	<th>\(B_i\)</th>	<th>\(Y_i = A_i \cdot B_i\)</th>
+				</tr>
+				<tr>	<td>0</td><td>0</td><td>0</td>	</tr>
+				<tr>	<td>0</td><td>1</td><td>0</td>	</tr>
+				<tr>	<td>1</td><td>0</td><td>0</td>	</tr>
+				<tr>	<td>1</td><td>1</td><td>1</td>	</tr>
+			</table>
+		</td>
+	</tr>
+	
+	
+</table>
+
+
+<!--- webpage content ends --->
+			</td>
+		</tr>	
+	</table>
+		 
+	<script> includeHTML(); </script> 
+</body>
+
+</html>
