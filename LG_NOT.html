@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>NOT Gate | icword</title>
+	<meta name="description" content="All about Digital and Integrated Circuits">
+	<link rel="stylesheet" href="styles.css">
+	<script src='include.js'></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+	<center> <h1><du> <a href='index.html'> icword </a> </du></h1> </center>
+		
+	<table style="text-align: left; vertical-align: top">
+		<tr>
+			<td>  <div include-html="sidepan.html"></div>  </td>
+			<td>
+<!--- webpage content goes here --->		
+
+<h1> <center> Logic Gate : NOT </center> </h1>
+<table>
+	<tr>
+		<td><b>Logic </b> </td>
+		<td>
+			Input is inverted at output. <br>
+			If input is <b>0</b> (LOW / FALSE), then the output will be <b>1</b> (HIGH / TRUE) and vice-versa.
+		</td>
+	</tr>
+	<tr>
+		<td><b>Number of inputs/outputs </b> </td>
+		<td>
+			Single input, Single output
+		</td>
+	</tr>
+	<tr>
+		<td><b>Logic Symbol </b> </td>
+		<td>
+			\(\bar {}\) <br> e.g. \(Y = \bar A \)
+		</td>
+	</tr>
+	<tr>
+		<td><b>Logic Diagram </b> <br> (For 2 inputs)</td>
+		<td> 
+			<img src="img/LG_NOT.png" alt="Logic diagram for NOT gate">
+		</td>
+	</tr>
+	<tr>
+		<td><b>Truth table </b> <br> (For 2 inputs)</td>
+		<td> 
+			<table style="text-align: center">
+				<colgroup>
+					<col style="width: 100px">
+					<col style="width: 100px">
+				</colgroup>
+				<tr>
+					<th>Input</th>	<th>Output</th>
+				</tr>
+				<tr>
+					<th>\(A\)</th>	<th>\(Y = \bar A \)</th>
+				</tr>
+				<tr>	<td>0</td><td>1</td>	</tr>
+				<tr>	<td>1</td><td>0</td>	</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Integrated Circuits </b></td>
+		<td> 
+			7406
+		</td>
+	</tr>
+	<tr>
+		<td><b>OR gate using universal gates </b></td>
+		<td> 
+			<table style="text-align: center">
+				<colgroup>
+					<col style="width: 200px">
+					<col style="width: 200px">
+				</colgroup>
+				<tr>
+					<td><img src="img/LG_NOT_usingNAND.png" alt ="Circuit diagram for NOT gate using NAND gates"><br>Using NAND gates</td>
+					<td><img src="img/LG_NOT_usingNOR.png" alt ="Circuit diagram for NOT gate using NOR gates"><br>Using NOR gates</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td><b>Related Video </b></td>
+		<td><a href="https://www.youtube.com/watch?v=MerKT4rjdNc">Click Here</a></td>
+	</tr>
+	
+	
+</table>
+
+
+<!--- webpage content ends --->
+			</td>
+		</tr>	
+	</table>
+		 
+	<script> includeHTML(); </script> 
+</body>
+
+</html>
