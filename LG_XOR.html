@@ -2,8 +2,8 @@
 <html>
 
 <head>
-	<title>AND Gate | icword</title>
-	<meta name="description" content="All about Digital and Integrated Circuits">
+	<title>XOR Gate | icword</title>
+	<meta name="description" content="All about Digital Integrated Circuits">
 	<link rel="stylesheet" href="styles.css">
 	<script src='include.js'></script>
 	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.0/es5/tex-mml-chtml.js"></script>
@@ -18,12 +18,13 @@
 			<td>
 <!--- webpage content goes here --->		
 
-<h1> <center> Logic Gate : AND </center> </h1>
+<h1> <center> Logic Gate : XOR </center> </h1>
+<h3> <center> (Exclusive OR) </center> </h3>
 <table>
 	<tr>
 		<td><b>Logic </b> </td>
 		<td>
-			If all the inputs are <b>1</b> (HIGH / TRUE), then output will be <b>1</b> (HIGH / TRUE), otherwise the output will be <b>0</b> (LOW / FALSE).
+			If even number of inputs are <b>1</b> (HIGH / TRUE), then output will be <b>0</b> (LOW / FALSE), otherwise the output will be <b>1</b> (HIGH / TRUE).
 		</td>
 	</tr>
 	<tr>
@@ -35,13 +36,13 @@
 	<tr>
 		<td><b>Logic Symbol </b> </td>
 		<td>
-			\(\cdot\) (dot) <br> e.g. \(Y = A \cdot B\)
+			\( \oplus \) <br> e.g. \(Y = A \oplus B\)
 		</td>
 	</tr>
 	<tr>
 		<td><b>Logic Diagram </b> <br> (For 2 inputs)</td>
 		<td> 
-			<img src='img/LG_AND_2ip.png' alt='Logic diagram for AND gate'>
+			<img src="img/LG_XOR_2ip.png" alt="Logic diagram for XOR gate">
 		</td>
 	</tr>
 	<tr>
@@ -57,12 +58,12 @@
 					<th colspan=2>Inputs</th>	<th>Output</th>
 				</tr>
 				<tr>
-					<th>\(A\)</th>	<th>\(B\)</th>	<th>\(Y = A \cdot B\)</th>
+					<th>\(A\)</th>	<th>\(B\)</th>	<th>\(Y = A \oplus B\)</th>
 				</tr>
 				<tr>	<td>0</td><td>0</td><td>0</td>	</tr>
-				<tr>	<td>0</td><td>1</td><td>0</td>	</tr>
-				<tr>	<td>1</td><td>0</td><td>0</td>	</tr>
-				<tr>	<td>1</td><td>1</td><td>1</td>	</tr>
+				<tr>	<td>0</td><td>1</td><td>1</td>	</tr>
+				<tr>	<td>1</td><td>0</td><td>1</td>	</tr>
+				<tr>	<td>1</td><td>1</td><td>0</td>	</tr>
 			</table>
 		</td>
 	</tr>
@@ -80,21 +81,21 @@
 				</tr>
 				<tr>
 					<td>Two Inputs</td>
-					<td><a href="7408.html">7408</a>, 7409, 4081</td>
+					<td>7486</td>
 				</tr>
 				<tr>
 					<td>Three Inputs</td>
-					<td>7411, 7415, 4073</td>
+					<td></td>
 				</tr>
 				<tr>
 					<td>Four Inputs</td>
-					<td>7421, 4082 </td>
+					<td></td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
-		<td><b>AND gate using universal gates </b></td>
+		<td><b>XOR gate using universal gates </b></td>
 		<td> 
 			<table style="text-align: center">
 				<colgroup>
@@ -102,18 +103,19 @@
 					<col style="width: 200px">
 				</colgroup>
 				<tr>
-					<td><img src="img/LG_AND_usingNAND.png" alt ="Circuit diagram for AND gate using NAND gates"><br>Using NAND gates</td>
-					<td><img src="img/LG_AND_usingNOR.png" alt ="Circuit diagram for AND gate using NOR gates"><br>Using NOR gates</td>
+					<td><img src="img/LG_XOR_usingNAND.png" alt ="Circuit diagram for XOR gate using NAND gates"><br>Using NAND gates</td>
+					<td>
+						<img src="img/LG_XOR_usingNOR_1.png" alt ="Circuit diagram for XOR gate using NOR gates"><hr>
+						<img src="img/LG_XOR_usingNOR_2.png" alt ="Circuit diagram for XOR gate using NOR gates"><br>Using NOR gates
+					</td>
 				</tr>
 			</table>
 		</td>
 	</tr>
 	<tr>
 		<td><b>Related Video </b></td>
-		<td><a href="https://www.youtube.com/watch?v=r4oxO0kla5c">Click Here</a></td>
+		<td><a href="https://www.youtube.com/watch?v=ppZaZ-dreh0">Click Here</a></td>
 	</tr>
-	
-	
 </table>
 
 
