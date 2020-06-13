@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>IC 7408 | icword</title>
+	<title>IC 7404 | icword</title>
 	<meta name="description" content="All about Digital and Integrated Circuits">
 	<link rel="stylesheet" href="styles.css">
 	<script src='include.js'></script>
@@ -18,30 +18,30 @@
 			<td>
 <!--- webpage content goes here --->		
 
-<h1><center> 7408 </center></h1>
+<h1><center> 7404 </center></h1>
 <table>
 	<tr>
 		<td><b>Function </b> </td>
-		<td> <a href="LG_AND.html">AND Gate</a> </td>
+		<td> <a href="LG_NOT.html">NOT Gate</a> </td>
 	</tr>
 	<tr>
 		<td><b>Number of gates in IC </b> </td>
-		<td>4</td>
+		<td>6</td>
 	</tr>
 	<tr>
 		<td><b>Number of inputs/outputs </b> </td>
-		<td>2 inputs for each gate (total 8)<br>1 output for each gate (total 4)</td>
+		<td>1 input for each gate (total 6)<br>1 output for each gate (total 6)</td>
 	</tr>
 	<tr>
 		<td><b>Pinouts and Logic Diagram </b> </td>
 		<td> 
-			<img src="img/7408_pinouts.png" alt="Pinouts and Logic diagram of 7408">
+			<img src="img/7404_pinouts.png" alt="Pinouts and Logic diagram of 7404">
 		</td>
 	</tr>
 	<tr>
 		<td><b>TTL Schematic diagram for each gate </b> </td>
 		<td> 
-			<img src="img/7408_ttl_schematics.png" alt="Schematic diagram for each gate of 7408">
+			<img src="img/7404_ttl_schematics.png" alt="Schematic diagram for each gate of 7404">
 		</td>
 	</tr>
 		<td><b>Pin Description </b> </td>
@@ -51,13 +51,13 @@
 				<tr> <td>Vcc</td> <td>Power supply (+ve)</td> <td>+5 volt</td> </tr>
 				<tr> <td>GND</td> <td>Reference ground</td> <td>0 volt</td> </tr>
 				<tr>
-					<td>A<sub>i</sub>, B<sub>i</sub> <br> (i=1,2,3,4)</td> 
-					<td>Inputs for i<sup>th</sup> AND gate</td>
+					<td>A<sub>i</sub> <br> (i=1,2,3,4,5,6)</td> 
+					<td>Inputs for i<sup>th</sup> NOT gate</td>
 					<td>0 volt for logic <b>0</b> <br> +5 volt for logic <b>1</b></td>
 				</tr>
 				<tr>
-					<td>Y<sub>i</sub> <br> (i=1,2,3,4)</td> 
-					<td>Output for i<sup>th</sup> AND gate</td>
+					<td>Y<sub>i</sub> <br> (i=1,2,3,4,5,6)</td> 
+					<td>Output for i<sup>th</sup> OR gate</td>
 					<td>0 volt for logic <b>0</b> <br> +5 volt for logic <b>1</b></td>
 				</tr>
 			</table>
@@ -70,18 +70,15 @@
 				<colgroup>
 					<col style="width: 100px">
 					<col style="width: 100px">
-					<col style="width: 100px">
 				</colgroup>
 				<tr>
-					<th colspan=2>Inputs</th>	<th>Output</th>
+					<th>Input</th>	<th>Output</th>
 				</tr>
 				<tr>
-					<th>\(A_i\)</th>	<th>\(B_i\)</th>	<th>\(Y_i = A_i \cdot B_i\)</th>
+					<th>\(A_i\)</th>	<th>\(Y_i = \overline A_i \)</th>
 				</tr>
-				<tr>	<td>0</td><td>0</td><td>0</td>	</tr>
-				<tr>	<td>0</td><td>1</td><td>0</td>	</tr>
-				<tr>	<td>1</td><td>0</td><td>0</td>	</tr>
-				<tr>	<td>1</td><td>1</td><td>1</td>	</tr>
+				<tr>	<td>0</td><td>1</td>	</tr>
+				<tr>	<td>1</td><td>0</td>	</tr>
 			</table>
 		</td>
 	</tr>
